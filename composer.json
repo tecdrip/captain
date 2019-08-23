@@ -1,0 +1,55 @@
+{
+    "name": "tecdrip/captain",
+    "description": "Automate deployments",
+    "version": "0.0.1",
+    "keywords": [
+        "tecdrip",
+        "captain"
+    ],
+    "homepage": "https://github.com/tecdrip/captain",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Travierm",
+            "email": "moorlagt@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tecdrip\\Captain\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tecdrip\\Captain\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tecdrip\\Captain\\CaptainServiceProvider"
+            ],
+            "aliases": {
+                "Captain": "Tecdrip\\Captain\\CaptainFacade"
+            }
+        }
+    }
+}
