@@ -1,5 +1,6 @@
 
-<img src="https://upload.wikimedia.org/wikipedia/en/1/1b/CaptainHookcartoon.jpg" />
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1b/CaptainHookcartoon.jpg">
+
 # Automate your Laravel Code Deployments
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tecdrip/captain.svg?style=flat-square)](https://packagist.org/packages/tecdrip/captain)
